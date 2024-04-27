@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example of a forms </title>
+</head>
+<body>
+    <h2> Insira o seu nome e senha </h2>
+    <form>
+        <label> for= "name">Nome: </label><br>
+        <input type = "text" id ="nome" name="nome"><br> <br>
+
+        <label>
+            for "senha ">Senha :</label> <br>
+        <input type="text" id ="senha" name="senha"><br><br>
+        <input type="button" value = "mostrar senha" onclick="mostrar senha"
+
+    </form>
+<p>id="senha inserida"</p>
+
+    <script>
+    function mostrarSenha(){    
+        var nomeUsuario = document.getElementById("nome").value;
+        var senha = document.getElementById("senha").value;
+
+        document.getElementById("senha inserida ").innerHTML= "A senha digitada por " + nomeUsuario + " é: " + senha;
+  }
+ </script>
+
+</body>
+</html>
